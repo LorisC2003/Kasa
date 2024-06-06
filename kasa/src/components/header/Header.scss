@@ -1,0 +1,21 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 25px 15px 25px;
+    .header-li {
+        display: inline;
+        padding: 10px 40px 10px 0px;
+    }
+    .header-li:hover {
+        text-decoration: underline;
+    }
+    .header-link {
+        color: inherit;
+        text-decoration: none;
+    }
+    .header-img {
+        height: 50px;
+        width: auto;
+        padding-left: 40px;
+    }
+}

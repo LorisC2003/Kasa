@@ -1,0 +1,11 @@
+.parent-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  .banner {
+    height: 230px;
+    border-radius: 20px;
+    margin: 10px 65px 10px 65px;
+  }
+}
