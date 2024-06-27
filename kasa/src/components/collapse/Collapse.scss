@@ -1,6 +1,8 @@
 .collapse-container {
-  width: calc(100% - 300px);
-  margin: 0 auto 20px auto;
+  width: 80%;
+  margin: 0 auto 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .collapsible {
@@ -18,20 +20,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
 
-.collapsible:hover {
-  background-color: #FF6060;
-}
+  &:hover {
+    background-color: #FF6060;
+  }
 
-.collapsible::after {
-  content: '\002B9D';
-  font-size: 16px;
-  transition: transform 0.2s ease;
-}
+  &::after {
+    content: '\002B9D';
+    font-size: 16px;
+    transition: transform 0.2s ease;
+  }
 
-.collapsible.active::after {
-  transform: rotate(180deg);
+  &.active::after {
+    transform: rotate(180deg);
+  }
 }
 
 .content {

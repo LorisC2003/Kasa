@@ -2,20 +2,27 @@
   display: flex;
   flex-wrap: wrap;
   background-color: #F6F6F6;
-  padding : 50px;
-  margin: 10px 65px 10px 65px;
+  padding: 50px;
+  margin: 10px 65px;
   border-radius: 20px;
   gap: 30px;
   justify-content: center;
 }
 
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block; /* Ajoutez ceci pour que le Link se comporte comme un bloc */
+  width: calc(33.333% - 30px); /* Ajustement pour 3 cartes par ligne */
+  margin: 15px 0; /* Supprimez les marges latérales */
+}
+
 .card {
   position: relative;
-  width: calc(30% - 20px);
-  aspect-ratio: 1 / 1 ;
+  width: 100%; /* Faire en sorte que la carte prenne toute la largeur du lien */
+  aspect-ratio: 1 / 1;
   overflow: hidden;
   border-radius: 10px;
-  margin: 15px 10px 15px 10px;
 
   &-image {
     width: 100%;
