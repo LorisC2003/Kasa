@@ -22,3 +22,25 @@
     color: inherit;
   }
 }
+
+@media (max-width: 500px) {
+  .error-page {
+    margin: 70px 0px 50px 0px;
+
+    img {
+      margin-bottom: 40px;
+      height: 100px;
+      width: auto;
+    }
+
+    p {
+      margin: 0px 25px 80px 25px;
+      color: #FF6060;
+      font-size: 25px;
+    }
+
+    a {
+      color: inherit;
+    }
+  }
+}

@@ -1,25 +1,22 @@
 .cards {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
   background-color: #F6F6F6;
   padding: 50px;
   margin: 10px 65px;
   border-radius: 20px;
-  gap: 30px;
   justify-content: center;
 }
 
 .card-link {
   text-decoration: none;
   color: inherit;
-  display: block; /* Ajoutez ceci pour que le Link se comporte comme un bloc */
-  width: calc(33.333% - 30px); /* Ajustement pour 3 cartes par ligne */
-  margin: 15px 0; /* Supprimez les marges latérales */
 }
 
 .card {
   position: relative;
-  width: 100%; /* Faire en sorte que la carte prenne toute la largeur du lien */
+  width: 100%;
   aspect-ratio: 1 / 1;
   overflow: hidden;
   border-radius: 10px;
@@ -40,3 +37,17 @@
     z-index: 2;
   }
 }
+
+@media (max-width: 500px) {
+  .cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    background-color: transparent;
+    padding: 15px;
+    margin: 0;
+  }
+  .card {
+    height: 250px;
+  }
+}
+

@@ -11,3 +11,18 @@
         height: Auto;
     }
 }
+
+@media (max-width: 500px) {
+
+    .footer {
+        padding: 40px 5px 40px 5px;
+        .footer-logo {
+            width: 85px;
+            height: Auto;
+        }
+        p {
+            font-size: 14px;
+        }
+    }
+
+}
