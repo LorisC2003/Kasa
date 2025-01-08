@@ -1,4 +1,3 @@
-// src/pages/About.js
 import React from 'react';
 import AboutBanner from "../../components/about-banner/About-banner";
 import Collapse from "../../components/collapse/Collapse";
